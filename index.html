@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Mohan</title>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color: black;" id="main-body">
+    <!-- Container with Border -->
+    <div class="container">
+        <!-- Desktop Icons -->
+        <div class="desktop">
+            <!-- This PC Icon -->
+            <div class="icon" onclick="location.href='thispc.html'">
+                <img src="https://img.icons8.com/ios-filled/50/000000/monitor.png" alt="This PC">
+                <span>This PC</span>
+            </div>
+            <!-- Admin Icon -->
+            <div class="icon" onclick="location.href='skills.html'">
+                <img src="https://img.icons8.com/ios-filled/50/000000/folder-invoices.png" alt="Skills">
+                <span>Skills</span>
+            </div>
+            <!-- Recycle Bin Icon -->
+            <div class="icon" onclick="location.href='projects.html'">
+                <img src="https://img.icons8.com/ios-filled/50/000000/recycle-bin.png" alt="Projects">
+                <span>Projects</span>
+            </div>
+        </div>
+
+        <!-- Taskbar -->
+        <div class="taskbar">
+            <div class="start-btn">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/windows-10.png" alt="Start">
+                <span class="change-color-btn" onclick="changeBodyColor()">Start</span>
+                <!-- <button class="change-color-btn" onclick="changeBodyColor()">Change Body Color</button> -->
+            </div>
+            <div class="taskbar-icons">
+                <img src="file-explorer.png" onclick="location.href='projects.html'">
+                <!-- <img src="img/skills.jpeg"> -->
+                <!-- <img src="img/linkedin"> -->
+                <a href="https://www.linkedin.com/in/arun-mohan-884bb4223/" target="_blank">
+                    <img src="linkedin" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Arunmohanms" target="_blank"><img src="github.png"></a>
+            </div>
+            <div class="taskbar-right">
+                <!-- Date and Time -->
+                <div class="date-time">
+                    <p class="time">14:59</p>
+                    <p class="date">12-10-2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to External JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Link to Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

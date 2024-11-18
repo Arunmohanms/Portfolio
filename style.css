@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    /* Set the background color of the body to black */
+}
+
+/* Container with Border */
+.container {
+    width: 80vw;
+    height: 90vh;
+    border: 5px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* Default background color */
+    background-image: url(windows-wallpaper.jpg);
+    /* Windows wallpaper */
+    background-size: cover;
+    /* Options: contain, cover, or specify a width/height */
+    background-position: center;
+    /* Adjusts the positioning of the image */
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+}
+
+/* Desktop Area */
+.desktop {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: flex-start;
+    /* Align items to the start */
+    padding: 20px;
+    /* Space inside the desktop area */
+    gap: 40px;
+    /* Increased space between icons */
+    flex: 1;
+    /* Allows the desktop area to take up remaining space */
+}
+
+/* Icon Styles */
+.icon {
+    display: flex;
+    /* Use flexbox for icon layout */
+    flex-direction: column;
+    /* Stack icon and text vertically */
+    align-items: center;
+    /* Center items horizontally */
+    color: black;
+    /* Change text color to black for visibility */
+    text-align: center;
+    /* Center text below icons */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    width: 80px;
+    /* Fixed width for consistent spacing */
+    transition: transform 0.2s;
+    /* Add a smooth transition effect */
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+}
+
+.icon img {
+    width: 50px;
+    /* Adjust icon size */
+    height: 50px;
+    /* Maintain aspect ratio */
+}
+
+.icon span {
+    margin-top: 5px;
+    /* Space between icon and text */
+    font-size: 14px;
+    /* Adjust font size */
+    color: blue;
+    /* Set text color for visibility */
+}
+
+/* Taskbar */
+.taskbar {
+    background-color: #333;
+    /* Dark background for the taskbar */
+    color: white;
+    /* Text color for taskbar */
+    display: flex;
+    /* Flexbox for layout */
+    justify-content: space-between;
+    /* Space between items */
+    align-items: center;
+    /* Center items vertically */
+    padding: 0 10px;
+    /* Padding on the sides */
+    height: 50px;
+    /* Fixed height for taskbar */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    /* Shadow effect for depth */
+}
+
+.start-btn {
+    display: flex;
+    /* Flexbox for start button */
+    align-items: center;
+    /* Center items vertically */
+    background-color: #0078d7;
+    /* Background color for start button */
+    padding: 5px 10px;
+    /* Padding for start button */
+    border-radius: 3px;
+    /* Rounded corners for start button */
+    color: white;
+    /* Text color for start button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.start-btn img {
+    width: 20px;
+    /* Icon size in the start button */
+    margin-right: 10px;
+    /* Space between icon and text */
+}
+
+.taskbar-icons {
+    display: flex;
+    /* Flexbox for taskbar icons */
+    gap: 15px;
+    /* Space between icons */
+}
+
+.taskbar-icons img {
+    width: 24px;
+    /* Icon size in the taskbar */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.taskbar-right {
+    display: flex;
+    /* Flexbox for right section */
+    align-items: center;
+    /* Center items vertically */
+    gap: 10px;
+    /* Space between items */
+}
+
+.date-time {
+    display: flex;
+    /* Flexbox for date and time */
+    flex-direction: column;
+    /* Stack date and time vertically */
+    align-items: flex-end;
+    /* Align to the right */
+    font-size: 14px;
+    /* Font size for date and time */
+}
+
+.time {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 16px;
+    /* Font size for time */
+    font-weight: bold;
+    /* Bold for emphasis */
+}
+
+.date {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 14px;
+    /* Font size for date */
+}
+
+/* Taskbar Button Styling */
+.change-color-btn {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.change-color-btn:hover {
+    background-color: #005bb5;
+}
